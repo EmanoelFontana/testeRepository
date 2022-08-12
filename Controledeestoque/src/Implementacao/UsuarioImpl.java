@@ -106,7 +106,7 @@ public class UsuarioImpl {
             while (rst.next()) {
                 DefaultTableModel tabelaAlunos = (DefaultTableModel) jTable1.getModel(); //pega modelo da tabela
 
-                String idUsuario = rst.getString("idusuarios");
+                String idUsuario = rst.getString("idusuario");
                 String nome = rst.getString("nome");
                 String dataNascimento = rst.getString("datanascimento");
                 String situacao = rst.getString("situacao");
@@ -145,7 +145,7 @@ public class UsuarioImpl {
             while (rst.next()) {
                 DefaultTableModel tabelaUsuario = (DefaultTableModel) jTable1.getModel(); //pega modelo da tabela
 
-                String idUsuario = rst.getString("idusuarios");
+                String idUsuario = rst.getString("idusuario");
                 String nome = rst.getString("nome");
                 String dataNascimento = rst.getString("datanascimento");
                 String situacao = rst.getString("situacao");
@@ -321,13 +321,13 @@ public class UsuarioImpl {
         ResultSet rst = null;
 
         try {
-            String sql = "SELECT * FROM usuarios WHERE idusuarios = ? ";
+            String sql = "SELECT * FROM usuarios WHERE idusuario = ? ";
             PreparedStatement pst = (PreparedStatement) conexao.conexao.prepareStatement(sql);
             pst.setInt(1, usuario.getIdUsuario());
 
             rst = pst.executeQuery();
             while (rst.next()) {
-                usuario.setIdUsuario(rst.getInt("idusuarios"));
+                usuario.setIdUsuario(rst.getInt("idusuario"));
                 usuario.setNome(rst.getString("nome"));
                 usuario.setDataNacimento(rst.getDate("datanascimento"));
                 usuario.setSituacao(rst.getString("situacao"));
@@ -348,7 +348,7 @@ public class UsuarioImpl {
         conexao.conectar();
 
         try {
-            String sql = "DELETE FROM usuarios WHERE idusuarios = ? ";
+            String sql = "DELETE FROM usuarios WHERE idusuario = ? ";
             PreparedStatement pst = (PreparedStatement) conexao.conexao.prepareStatement(sql);
             pst.setInt(1, usuario.getIdUsuario());
 
