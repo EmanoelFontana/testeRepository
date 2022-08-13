@@ -101,21 +101,21 @@ public class MntUsuarios extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aluno\\Documents\\NetBeansProjects\\Controledeestoque\\src\\Imagens\\icons8-lápis-40.png")); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-lápis-40.png"))); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aluno\\Documents\\NetBeansProjects\\Controledeestoque\\src\\Imagens\\icons8-excluir-40.png")); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-excluir-40.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aluno\\Documents\\NetBeansProjects\\Controledeestoque\\src\\Imagens\\icons8-sair-40.png")); // NOI18N
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-sair-40.png"))); // NOI18N
 
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-adicionar-40.png"))); // NOI18N
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -184,7 +184,7 @@ public class MntUsuarios extends javax.swing.JFrame {
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Aluno\\Documents\\NetBeansProjects\\Controledeestoque\\src\\Imagens\\icons8-sair-40.png")); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icons8-sair-40.png"))); // NOI18N
 
         jLabel3.setText("Data Nascimento:");
 
